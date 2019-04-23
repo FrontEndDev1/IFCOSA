@@ -1,0 +1,30 @@
+body {margin:0; font-family: 'Judson', serif;}
+#wrapper {background-color:rgb(232,232,233);}
+nav {background-color:rgb(189,5,29);}
+.n {text-decoration:none; color:rgb(220, 220, 220); font-family: 'Archivo Black', sans-serif;}
+footer {background-color:rgb(18,18,18); color:white; padding:20px;}
+label.fi {font-family: 'Archivo Black', sans-serif; font-size: .90em;}
+.followus {width:15vw;}
+.footlink {list-style:none; display:flex; flex-direction:row;}
+.flinkitem {padding:10px;}
+.cinfofoot {color:#229cef;}
+@media screen and (min-width: 751px) {
+	.altdiv {display:none;}
+	.navbar {display:flex; flex-direction:row; list-style:none;}
+	.navitem {padding:1vw;}
+}
+@media screen and (max-width: 750px) and (min-width: 361px) {
+	.altdiv {display:none;}
+	.navbar {display:flex; flex-direction:row; list-style:none;}
+	.navitem {padding:1vw;}
+}
+@media screen and (max-device-width: 360px) {
+	#wrapper {display:grid; grid-template-columns: auto; grid-template-rows: auto auto auto;}
+	.navbar {display:grid; grid-template-columns: auto auto auto auto; grid-template-rows: auto; list-style:none; padding-left:0;}
+	.navitem {display:flex; justify-content:center;}
+	.n {display:flex; flex-direction:column; justify-content:center;}
+	footer {text-align:center;}
+	.footlink {display:flex; padding-left:0; justify-content:center;}
+	.navdiv {display:none;}
+	button {background-color:rgb(189,5,29); border:0;  padding:0;}
+}
